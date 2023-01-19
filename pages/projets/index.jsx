@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { useState,useEffect } from "react"
 import { Layout } from "../components/Layout"
@@ -24,7 +25,7 @@ const Projet = ()=>{
             <h1>{worldcup.name}</h1>
             <div className="colDescription languages">
                 <h2 className="label">Languages :</h2>
-                {worldcup.tags.map((w)=><div className="tag">{w}</div>)}
+                {worldcup.tags.map((w,i)=><div key={i} className="tag">{w}</div>)}
             </div>
             <div className="colDescription">
                 <h2>Cadre:</h2>
@@ -44,12 +45,12 @@ const Projet = ()=>{
                 <h2>images du projet:</h2>
                 <div className="caroussel">
                     <p>g</p>
-                    <img src="https://res.cloudinary.com/dvntspebj/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1674128148/Affiche_1_vc6ihb.jpg" alt="" />
+                    <Image src="https://res.cloudinary.com/dvntspebj/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1674128148/Affiche_1_vc6ihb.jpg" alt="" />
                     <p>d</p>
                 </div>
                 <div className="count">{ImageIndex}/x</div>
             </div>
-            <Link href="./" className="backHome">Retourner à l'acceuil</Link>
+            <Link href="./" className="backHome">Retourner à l`&apos;acceuil</Link>
         </div>
         
         </>
