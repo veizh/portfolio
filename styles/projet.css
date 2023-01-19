@@ -1,0 +1,103 @@
+.colProject {
+  width: 80%;
+  max-width: 1000px;
+  color: black;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.colProject h1 {
+  font-size: 35px;
+  color: #3c2148;
+  width: 100%;
+}
+.colProject .caroussel {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  grid-area: 20px;
+}
+.colProject .caroussel img {
+  width: 80%;
+  max-width: 700px;
+}
+.colProject .count {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 20px;
+}
+.colProject .colDescription {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #3c2148;
+  padding-bottom: 20px;
+}
+.colProject .colDescription.languages {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media (min-width: 992px) {
+  .colProject .colDescription.languages {
+    flex-direction: row;
+  }
+}
+.colProject .colDescription h2 {
+  width: 100%;
+  font-size: 27px;
+  color: #3c2148;
+}
+.colProject .colDescription .tag {
+  background-color: #3c2148;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .colProject .colDescription .tag {
+    width: auto;
+  }
+}
+.colProject .colDescription .tag:hover {
+  filter: brightness(1.3);
+}
+.colProject .colDescription p {
+  margin-top: 5px;
+  font-size: 22px;
+}
+.colProject .backHome {
+  text-decoration: unset;
+  border: #3c2148 4px solid;
+  position: relative;
+  float: right;
+  font-size: 22px;
+  margin-top: 40px;
+  background-color: white;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  padding: 10px 40px;
+  width: 100%;
+  text-align: center;
+  color: #3c2148;
+  cursor: pointer;
+}
+.colProject .backHome:hover {
+  background-color: #3c2148;
+  color: white;
+}
+@media (min-width: 768px) {
+  .colProject .backHome {
+    width: unset;
+    float: right;
+    margin-bottom: 80px;
+  }
+}/*# sourceMappingURL=projet.css.map */

@@ -1,0 +1,100 @@
+@import './responsive';
+
+.colProject{
+    width: 80%;
+    max-width: 1000px;
+    color: black;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    h1{
+        font-size: 35px;
+        color: #3c2148;
+        width: 100%;
+    }
+    .caroussel{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        grid-area: 20px;
+        img{
+            width: 80%;
+        max-width: 700px;  
+           }
+           
+
+    }
+    .count{
+        font-size: 22px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .colDescription{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid #3c2148;
+        padding-bottom: 20px;
+        &.languages{
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            @include desktop{
+                flex-direction: row;
+            }
+        }
+        
+        h2{
+            width: 100%;
+            font-size: 27px;
+        color: #3c2148;
+        }
+        .tag{
+            background-color: #3c2148;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 4px;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            @include tablet{
+                width: auto;
+            }
+            &:hover{
+                filter: brightness(1.3);
+            }
+        }
+        p{  margin-top: 5px;
+            font-size: 22px;
+        }
+    }
+    .backHome{
+        text-decoration: unset;
+        border: #3c2148 4px solid;
+        position: relative;
+        float: right;
+        font-size: 22px;
+        margin-top: 40px;
+        background-color: white;
+        margin-bottom: 40px;
+        letter-spacing: 1px;
+        padding: 10px 40px;
+        width: 100%;
+        text-align: center;
+        color: #3c2148;
+        cursor: pointer;
+        &:hover{
+            background-color: #3c2148;
+            color: white;
+        }
+        
+        @include tablet{
+            width: unset;
+            float: right;
+            margin-bottom: 80px;
+        }
+}
+}

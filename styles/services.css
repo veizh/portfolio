@@ -1,0 +1,110 @@
+.containerServices {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .containerServices::after {
+    content: "";
+    position: absolute;
+    background-image: url("../public/brush.svg");
+    background-size: cover;
+    width: 150px;
+    top: 25px;
+    right: 0;
+    z-index: 1;
+    opacity: 0.5;
+    aspect-ratio: 800/765;
+  }
+}
+@media (min-width: 992px) {
+  .containerServices {
+    width: 80%;
+  }
+}
+.containerServices .introduction {
+  font-size: 22px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.containerServices .colSelection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .containerServices .colSelection {
+    flex-direction: row;
+  }
+}
+.containerServices .colSelection .cardNav {
+  padding: 5px 20px;
+  color: whitesmoke;
+  width: 150px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: unset;
+  background-color: #3c2148;
+}
+.containerServices .colSelection .cardNav:hover {
+  background-color: #773396;
+  filter: brightness(1.2);
+}
+.containerServices .colService {
+  display: flex;
+  flex-direction: column;
+}
+.containerServices .colService .title {
+  font-size: 35px;
+  color: #3c2148;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.containerServices .colService .textContent {
+  font-size: 22px;
+}
+.containerServices .colService .textContent em {
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #3c2148;
+}
+.containerServices .colService .textContent em:hover {
+  color: #773396;
+}
+.containerServices .navContact {
+  text-decoration: unset;
+  border: #3c2148 4px solid;
+  font-size: 22px;
+  margin-top: 40px;
+  background-color: white;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  padding: 10px 40px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.containerServices .navContact:hover, .containerServices .navContact:hover > a {
+  background-color: #3c2148;
+  color: white;
+}
+.containerServices .navContact a {
+  text-decoration: none;
+  color: #3c2148;
+}
+@media (min-width: 768px) {
+  .containerServices .navContact {
+    width: unset;
+    float: right;
+    margin-bottom: 80px;
+  }
+}/*# sourceMappingURL=services.css.map */
