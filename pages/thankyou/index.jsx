@@ -1,4 +1,4 @@
-import { NavBar } from '../components/navBar'
+import { NavBar } from '../../components/navBar'
 import Link from 'next/link'
 import Image from 'next/image'
  const thankyou = () => {

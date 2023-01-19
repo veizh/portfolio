@@ -1,8 +1,8 @@
 import Head from "next/head"
 import { useEffect, useState } from "react"
-import { Card } from "./components/card"
-import { NavBar } from "./components/navBar"
-import { Project } from "./components/Project"
+import { Card } from "../components/card"
+import { NavBar } from "../components/navBar"
+import { Project } from "../components/Project"
 
 
 const projects = [

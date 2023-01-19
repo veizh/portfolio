@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Layout } from "../components/Layout"
-import { NavBar } from "../components/navBar"
+import { Layout } from "../../components/Layout"
+import { NavBar } from "../../components/navBar"
 const About =()=>{
     return(
         <>

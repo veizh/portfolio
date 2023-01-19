@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState,useEffect } from "react"
-import { Layout } from "../components/Layout"
-import { NavBar } from "../components/navBar"
+import { Layout } from "../../components/Layout"
+import { NavBar } from "../../components/navBar"
 const worldcup = {
     name:"AG-consulting WorldCup",
     src:"./projects/projet_ag.webp",

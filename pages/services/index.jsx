@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import { Layout } from "../components/Layout"
-import { NavBar } from "../components/navBar"
+import { Layout } from "../../components/Layout"
+import { NavBar } from "../../components/navBar"
 const Marketing =()=>{
     return(
         <>
