@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import { useEffect, useState } from 'react'
-import { Card } from './components/card'
-import { NavBar } from './components/navBar'
-import { Project } from './components/Project'
+import Head from "next/head"
+import { useEffect, useState } from "react"
+import { Card } from "./components/card"
+import { NavBar } from "./components/navBar"
+import { Project } from "./components/Project"
 
 
 const projects = [
@@ -36,7 +36,7 @@ export default function Home() {
   const [opa,setOpa] = useState(false)
   
   useEffect(()=>{
-    const video = document.querySelector('video')
+    const video = document.querySelector("video")
     video.playbackRate = 0.75
     setInterval(() => {
       const crt =video.currentTime;
@@ -62,60 +62,60 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <div className='layout'>
-        <div className='background' />
-        <div className='content'>
+      <div className="layout">
+        <div className="background" />
+        <div className="content">
           {array&&array.map((e,i)=>{
             return <p key={i} style={{animationDelay:i*0.075+"s"} }>{e}</p>
           })}
         </div>
-        <div className='slogan'><div className="container">On vous aide a améliorer votre image en ligne grâce au <a>web design</a> et au <a>digital marketing.</a></div></div>
-        <img className='waves' src='./waves.svg'/>
+        <div className="slogan"><div className="container">On vous aide a améliorer votre image en ligne grâce au <a>web design</a> et au <a>digital marketing.</a></div></div>
+        <img className="waves" src="./waves.svg"/>
         <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mp4" type="video/mp4" /></video>
 
       </div>
-      <div className='presentation'>
-        <Card to="./services?w=design" title="Design" content="Nous faisons le design de votre site en s'appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients." source="./brush.svg" />
-        <Card to="./services?w=seo" title="S.E.O" content="Nous faisons le design de votre site en s'appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients. " source="./SEO.svg" />
-        <Card to="./services?w=integration" title="Intégration" content="Nous faisons le design de votre site en s'appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients. " source="./code.svg" />
+      <div className="presentation">
+        <Card to="./services?w=design" title="Design" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients." source="./brush.svg" />
+        <Card to="./services?w=seo" title="S.E.O" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients. " source="./SEO.svg" />
+        <Card to="./services?w=integration" title="Intégration" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients. " source="./code.svg" />
 
       </div>
-      <section id="projets" className='projectsContainer' >
+      <section id="projets" className="projectsContainer" >
         <h1>Mes Projets</h1>
         {projects.map((e,i)=><Project key={i} source={e.source} name={e.name} />)}
       </section>
-      <section id="contact" className='backgroundSecond'><div className='first'></div><div className='second'></div></section>
-      <section className='contactContainer' >
+      <section id="contact" className="backgroundSecond"><div className="first"></div><div className="second"></div></section>
+      <section className="contactContainer" >
         <h1>Contactez-Moi</h1>
         <p>Explain us your project or ask us anythings. More details you give, most accurate our estimation will be. </p>
         <form action="https://formsubmit.co/durville.maxime.pro@gmail.com"  method="POST">
           <input type="hidden" name="_captcha" value="false"></input>
           <input type="hidden" name="_next" value="http:/localhost:3000/thankyou"></input>
-          <div className='containerInput email'>
-            <label htmlFor='email'>Email Address*</label>
+          <div className="containerInput email">
+            <label htmlFor="email">Email Address*</label>
             <input type="email" name="email"  required/>
           </div>
           
-          <div className='containerInput firstName'>
-            <label htmlFor='firstName'>First Name*</label>
+          <div className="containerInput firstName">
+            <label htmlFor="firstName">First Name*</label>
             <input type="text" name="firstName"  required/>
           </div>
           
-          <div className='containerInput lastName'>
-            <label htmlFor='lastName'>Last Name*</label>
+          <div className="containerInput lastName">
+            <label htmlFor="lastName">Last Name*</label>
             <input type="text" name="lastName" required/>
           </div>
 
-          <div className='containerInput phone'>
-            <label  htmlFor='phone'>Phone number</label>
+          <div className="containerInput phone">
+            <label  htmlFor="phone">Phone number</label>
             <input type="tel" name="phone" />
           </div>
 
-          <div className='containerInput message'>
-            <label  htmlFor='message'>Your message*</label>
+          <div className="containerInput message">
+            <label  htmlFor="message">Your message*</label>
             <textarea type="text" name="message" required/>
           </div>
-          <button type='submit'>SEND</button>
+          <button type="submit">SEND</button>
         </form>
       </section>
     </>
