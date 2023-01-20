@@ -8,13 +8,13 @@ import Image from 'next/image'
             <NavBar />
             <div className="layoutTy ">
                 <div className='containerTop'>
-                    <h1>Thank You !</h1>
-                    <p>We come back to you fast as possible !</p>
+                    <h1>Merci de votre message !</h1>
+                    <p>Je reviens vers vous le plus vite possible !</p>
                     <img className='waves' src='./waves.svg' />
                 </div>
                 <div className='containerBot'>
-                    <p>we are going to send you an estimation of the duration and the cost to set your online project.</p>
-                    <Link href="/">Let&apos;s back Home <Image width='100' height="30" alt="home icon" src='./home.svg' /></Link>
+                    <p>En vous envoyant une estimation de la durée et du côut de votre projet.</p>
+                    <Link href="/">Retournez à l'acceuil <Image width='100' height="30" alt="home icon" src='./home.svg' /></Link>
                 </div>
             </div>
         

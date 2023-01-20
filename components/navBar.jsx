@@ -13,7 +13,8 @@ export const NavBar = () =>{
                 </div>
                 <div className={toggle?"dropContainer active":"dropContainer"}>
                     <div className="drop">
-                        <Link href="./#projets">projets</Link>
+                    <Link href="./">Acceuil</Link>
+                        <Link href="./#projets">Projets</Link>
 
                         <Link href="./services">Services</Link>
                         <Link href="./#contact">Contact</Link>

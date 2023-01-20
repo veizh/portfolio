@@ -179,10 +179,13 @@ body{
         text-align: center;
         overflow: hidden;
         p{
-            font-size: 27px;
+            font-size: 12px;
             margin: 5px;
             animation: letterWritting 1s ease-in-out forwards;
         transform: translateY(-150px);
+        @include tablet{
+            font-size: 24px;
+        } 
             @include desktop{
                 font-size: 38px;
             }
@@ -228,9 +231,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
-    position: relative;    border-collapse: collapse;
-    justify-content: space-between;
-
+    position: relative;    
     gap: 6px;
     margin-bottom: 10vh;
   
@@ -265,7 +266,7 @@ body{
                 width: 100%;
                 transform: scale(1.2);
                 transition: all  0.27s ease-in-out;
-                filter:brightness(65%);
+                filter:brightness(80%);
                 
                 
                 &:hover{
@@ -289,7 +290,7 @@ body{
     }
 
     &::after{
-        content: "Win together";
+        content: "Passez à l'action";
         width: 140px;
         text-align: center;
         position: absolute;

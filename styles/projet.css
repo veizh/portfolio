@@ -12,6 +12,39 @@
   color: #3c2148;
   width: 100%;
 }
+.colProject .rowNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+  margin-top: 10px;
+  align-items: center;
+  gap: 30px;
+}
+@media (min-width: 992px) {
+  .colProject .rowNav {
+    gap: 50px;
+    margin-top: 20px;
+  }
+}
+.colProject .fleche {
+  background-size: cover;
+  background-image: url("../public/arrow.svg");
+  width: 40px;
+  aspect-ratio: 482/314;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .colProject .fleche {
+    width: 70px;
+  }
+}
+.colProject .fleche:hover {
+  filter: brightness(1.3);
+}
+.colProject .gauche {
+  transform: rotateY(180deg);
+}
 .colProject .caroussel {
   margin-top: 20px;
   display: flex;
@@ -21,13 +54,13 @@
   grid-area: 20px;
 }
 .colProject .caroussel img {
-  width: 80%;
+  width: 95%;
   max-width: 700px;
+  border: #3c2148 2px solid;
 }
 .colProject .count {
   font-size: 22px;
   text-align: center;
-  margin-top: 20px;
 }
 .colProject .colDescription {
   width: 100%;
@@ -96,6 +129,7 @@
 }
 @media (min-width: 768px) {
   .colProject .backHome {
+    margin-left: auto;
     width: unset;
     float: right;
     margin-bottom: 80px;

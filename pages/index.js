@@ -12,27 +12,12 @@ const projects = [
   },
   {
     source:"./projects/projet_kasa.webp",
-    name:"TEST"
+    name:"Kasa"
   },
-  {
-    source:"./projects/projet_ag.webp",
-    name:"TEST"
-  },
-  {
-    source:"./projects/projet_kasa.webp",
-    name:"Ag-WorldCup"
-  },
-  {
-    source:"./projects/projet_ag.webp",
-    name:"Ag-WorldCup"
-  },
-  {
-    source:"./projects/projet_kasa.webp",
-    name:"Ag-WorldCup"
-  },
+  
 ]
 export default function Home() {
-  const [array,setArray] = useState(Array.from("GROWN WITH US"))
+  const [array,setArray] = useState(Array.from("EVOLUONS ENSEMBLE"))
   const [opa,setOpa] = useState(false)
   
   useEffect(()=>{
@@ -69,7 +54,7 @@ export default function Home() {
             return <p key={i} style={{animationDelay:i*0.075+"s"} }>{e}</p>
           })}
         </div>
-        <div className="slogan"><div className="container">On vous aide a améliorer votre image en ligne grâce au <a>web design</a> et au <a>digital marketing.</a></div></div>
+        <div className="slogan"><div className="container">J'emploie mes compétences<a> d'intégration, </a> <a> de web design</a> et de <a>digital marketing</a> pour vous aider à grandir.</div></div>
         <img className="waves" src="./waves.svg"/>
         <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mp4" type="video/mp4" /></video>
 
@@ -87,35 +72,35 @@ export default function Home() {
       <section id="contact" className="backgroundSecond"><div className="first"></div><div className="second"></div></section>
       <section className="contactContainer" >
         <h1>Contactez-Moi</h1>
-        <p>Explain us your project or ask us anythings. More details you give, most accurate our estimation will be. </p>
+        <p>Expliquez moi votre projet ou demandez ce que vous voulez ! </p>
         <form action="https://formsubmit.co/durville.maxime.pro@gmail.com"  method="POST">
           <input type="hidden" name="_captcha" value="false"></input>
           <input type="hidden" name="_next" value="http:/localhost:3000/thankyou"></input>
           <div className="containerInput email">
-            <label htmlFor="email">Email Address*</label>
+            <label htmlFor="email">Adresse Email*</label>
             <input type="email" name="email"  required/>
           </div>
           
           <div className="containerInput firstName">
-            <label htmlFor="firstName">First Name*</label>
+            <label htmlFor="firstName">Nom ou Marque*</label>
             <input type="text" name="firstName"  required/>
           </div>
           
           <div className="containerInput lastName">
-            <label htmlFor="lastName">Last Name*</label>
+            <label htmlFor="lastName">Prenom*</label>
             <input type="text" name="lastName" required/>
           </div>
 
           <div className="containerInput phone">
-            <label  htmlFor="phone">Phone number</label>
+            <label  htmlFor="phone">Numéro de Téléphone</label>
             <input type="tel" name="phone" />
           </div>
 
           <div className="containerInput message">
-            <label  htmlFor="message">Your message*</label>
+            <label  htmlFor="message">Vote Message*</label>
             <textarea type="text" name="message" required/>
           </div>
-          <button type="submit">SEND</button>
+          <button type="submit">Envoyer</button>
         </form>
       </section>
     </>

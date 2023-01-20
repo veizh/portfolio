@@ -105,7 +105,7 @@ const Service = (props)=>{
         const param =  new URLSearchParams(window.location.search)
         setParam(param.get("w"))
         console.log(param);
-        if(!param){
+        if(param !=="e-commerce" || param!=="marketing" || param!=="integration" || param!=="design" || param !== "seo"){
             setParam("e-commerce")
         }
     },[])
