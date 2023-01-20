@@ -82,6 +82,7 @@ body {
 .navContainer .logo {
   height: 80%;
   background-size: cover;
+  cursor: pointer;
 }
 .navContainer .nav {
   font-size: 27px;

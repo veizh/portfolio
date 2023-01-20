@@ -1,14 +1,14 @@
 import Link from "next/link"
+import { useRouter } from "next/router"
 import { useState } from "react"
-
 export const NavBar = () =>{
     const [toggle,setToggle]  =useState(false)
-
+    const router = useRouter()
     return(
         <header className="sticky">
             <div className="navContainer">
                 <div className="nav">
-                    <img className="logo" src="logo.svg"></img>
+                    <img className="logo" onClick={()=>router.push("./")} src="logo.svg"></img>
                     <div className="menu" onClick={()=>setToggle(!toggle)}><img src="./menu.svg" className={toggle?"active":""} /></div>
                 </div>
                 <div className={toggle?"dropContainer active":"dropContainer"}>

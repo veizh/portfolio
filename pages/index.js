@@ -4,7 +4,6 @@ import { useEffect, useState } from "react"
 import { Card } from "../components/card"
 import { NavBar } from "../components/navBar"
 import { Project } from "../components/Project"
-
 const projects = [
   {
     source:"./projects/projet_ag.webp",
