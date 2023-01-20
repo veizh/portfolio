@@ -159,18 +159,22 @@ body {
   color: white;
   z-index: 5;
 }
-.layout .slogan button {
+.layout .slogan .button {
   margin-top: 25px;
   font-size: 18px;
   padding: 10px 10px;
   border: 2px solid white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: white;
+  text-decoration: unset;
   background-color: unset;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
-.layout .slogan button img {
+.layout .slogan .button img {
   height: 22px;
   margin-left: 15px;
 }

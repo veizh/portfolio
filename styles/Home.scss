@@ -162,12 +162,14 @@ body{
         font-size: 27px;
         color: white;
         z-index: 5;
-        button{
+        .button{
             margin-top: 25px;
             font-size: 18px;
             padding: 10px 10px ;
             border: 2px solid white;
+            width: fit-content;
             color: white;
+            text-decoration: unset;
             background-color: unset;
             cursor: pointer;
             display: flex;

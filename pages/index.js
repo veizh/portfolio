@@ -54,7 +54,7 @@ export default function Home() {
             return <p key={i} style={{animationDelay:i*0.075+"s"} }>{e}</p>
           })}
         </div>
-        <div className="slogan"><div className="container">J&apos;emploie mes compétences<a> d&apos;intégration, </a> <a> de web design</a> et de <a>digital marketing</a> pour vous aider à grandir.</div><button>En savoir plus sur moi <img src="arrowWhite.svg"/></button></div>
+        <div className="slogan"><div className="container">J&apos;emploie mes compétences<a> d&apos;intégration, </a> <a> de web design</a> et de <a>digital marketing</a> pour vous aider à grandir.</div><Link href="./about" className="button">En savoir plus sur moi <img src="arrowWhite.svg"/></Link></div>
         <img className="waves" src="./waves.svg"/>
         <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mp4" type="video/mp4" /></video>
 
