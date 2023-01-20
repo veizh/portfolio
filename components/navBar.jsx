@@ -8,7 +8,7 @@ export const NavBar = () =>{
         <header className="sticky">
             <div className="navContainer">
                 <div className="nav">
-                    <div className="logo">logo</div>
+                    <img className="logo" src="logo.svg"></img>
                     <div className="menu" onClick={()=>setToggle(!toggle)}><img src="./menu.svg" className={toggle?"active":""} /></div>
                 </div>
                 <div className={toggle?"dropContainer active":"dropContainer"}>
@@ -18,7 +18,7 @@ export const NavBar = () =>{
 
                         <Link href="./services">Services</Link>
                         <Link href="./#contact">Contact</Link>
-                        <Link href="./about">A propos</Link>
+                        <Link href="./#about">A propos</Link>
                     </div>
                 </div>    
             </div>

@@ -65,6 +65,9 @@ body{
         }
         
     }
+    #projets{
+        width: 100%;
+    }
 .navContainer{
     box-shadow: rgba(0, 0, 0, 0.692) 2px 0 4px 1px;
     z-index: 8;
@@ -75,7 +78,10 @@ body{
     justify-content: center;
     text-align: center;
     background-color: #230c2e;
-    
+    .logo{
+        height: 80%;
+        background-size: cover;
+    }
     .nav{
         
         font-size: 27px;
@@ -85,6 +91,10 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        a{
+            z-index: 8;
+        }
+       
         .menu{
             text-align: flex-end;
             color: white;
@@ -152,6 +162,21 @@ body{
         font-size: 27px;
         color: white;
         z-index: 5;
+        button{
+            margin-top: 25px;
+            font-size: 18px;
+            padding: 10px 10px ;
+            border: 2px solid white;
+            color: white;
+            background-color: unset;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            img{
+                height:22px;
+                margin-left: 15px;
+            }
+        }
         .container{
             width: 100%;
             max-width: 450px;
@@ -168,7 +193,7 @@ body{
     .content{
         z-index: 3;
         position: absolute;
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(10px);
         color: white;
         top: 15vh;
         font-size: 38px;
@@ -179,7 +204,7 @@ body{
         text-align: center;
         overflow: hidden;
         p{
-            font-size: 12px;
+            font-size: 16px;
             margin: 5px;
             animation: letterWritting 1s ease-in-out forwards;
         transform: translateY(-150px);
@@ -240,6 +265,7 @@ body{
             margin-bottom: 5vh;
             font-size: 59px;
             color: #3c2148;
+            margin-top: 3vh;
         }
         .subContainer{
             position: relative;

@@ -7,7 +7,7 @@ const About =()=>{
         <>
             <NavBar />
             <Layout > </Layout>
-            <main className="aboutCol">
+            <main id='about' className="aboutCol">
                 <div className="bigCard">
                        <div className="top">
                             <div className="name">Maxime Durville</div>

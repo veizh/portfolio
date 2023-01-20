@@ -64,6 +64,10 @@ body {
   z-index: 8;
 }
 
+#projets {
+  width: 100%;
+}
+
 .navContainer {
   box-shadow: rgba(0, 0, 0, 0.692) 2px 0 4px 1px;
   z-index: 8;
@@ -75,6 +79,10 @@ body {
   text-align: center;
   background-color: #230c2e;
 }
+.navContainer .logo {
+  height: 80%;
+  background-size: cover;
+}
 .navContainer .nav {
   font-size: 27px;
   width: 80%;
@@ -83,6 +91,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.navContainer .nav a {
+  z-index: 8;
 }
 .navContainer .nav .menu {
   text-align: flex-end;
@@ -148,6 +159,21 @@ body {
   color: white;
   z-index: 5;
 }
+.layout .slogan button {
+  margin-top: 25px;
+  font-size: 18px;
+  padding: 10px 10px;
+  border: 2px solid white;
+  color: white;
+  background-color: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.layout .slogan button img {
+  height: 22px;
+  margin-left: 15px;
+}
 .layout .slogan .container {
   width: 100%;
   max-width: 450px;
@@ -163,8 +189,8 @@ body {
 .layout .content {
   z-index: 3;
   position: absolute;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   color: white;
   top: 15vh;
   font-size: 38px;
@@ -177,7 +203,7 @@ body {
   overflow: hidden;
 }
 .layout .content p {
-  font-size: 12px;
+  font-size: 16px;
   margin: 5px;
   -webkit-animation: letterWritting 1s ease-in-out forwards;
           animation: letterWritting 1s ease-in-out forwards;
@@ -255,6 +281,7 @@ body {
   margin-bottom: 5vh;
   font-size: 59px;
   color: #3c2148;
+  margin-top: 3vh;
 }
 .projectsContainer .subContainer {
   position: relative;

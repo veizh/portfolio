@@ -1,9 +1,9 @@
 import Head from "next/head"
+import Link from "next/link"
 import { useEffect, useState } from "react"
 import { Card } from "../components/card"
 import { NavBar } from "../components/navBar"
 import { Project } from "../components/Project"
-
 
 const projects = [
   {
@@ -54,7 +54,7 @@ export default function Home() {
             return <p key={i} style={{animationDelay:i*0.075+"s"} }>{e}</p>
           })}
         </div>
-        <div className="slogan"><div className="container">J&apos;emploie mes compétences<a> d&apos;intégration, </a> <a> de web design</a> et de <a>digital marketing</a> pour vous aider à grandir.</div></div>
+        <div className="slogan"><div className="container">J&apos;emploie mes compétences<a> d&apos;intégration, </a> <a> de web design</a> et de <a>digital marketing</a> pour vous aider à grandir.</div><button>En savoir plus sur moi <img src="arrowWhite.svg"/></button></div>
         <img className="waves" src="./waves.svg"/>
         <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mp4" type="video/mp4" /></video>
 
@@ -65,11 +65,15 @@ export default function Home() {
         <Card to="./services?w=integration" title="Intégration" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients. " source="./code.svg" />
 
       </div>
-      <section id="projets" className="projectsContainer" >
+      <section id="projets">
+      <div  className="projectsContainer" >
         <h1>Mes Projets</h1>
         {projects.map((e,i)=><Project key={i} source={e.source} name={e.name} />)}
+      </div>
       </section>
+      
       <section id="contact" className="backgroundSecond"><div className="first"></div><div className="second"></div></section>
+      
       <section className="contactContainer" >
         <h1>Contactez-Moi</h1>
         <p>Expliquez moi votre projet ou demandez ce que vous voulez ! </p>
