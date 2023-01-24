@@ -85,7 +85,7 @@ const Ecom =()=>{
                 de maintenance particulière à faire une fois que le site est en place.<br/> <br/> 
                 Je peux utiliser le CMS Shopify, qui me permet d&apos;assurer des performances optimals pour votre boutique à moindre coût.
             </div>
-            <button className="navContact" ><Link href="./#contact">Ca m&apos;intéresse</Link> </button>
+            <Link href="./#contact" className="navContact" >Ca m&apos;intéresse</Link> 
 
         </section>
         
