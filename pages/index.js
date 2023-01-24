@@ -59,9 +59,9 @@ export default function Home() {
 
       </div>
       <div className="presentation">
-        <Card to="./services?w=design" title="Design" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients." source="./brush.svg" />
-        <Card to="./services?w=seo" title="S.E.O" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients. " source="./SEO.svg" />
-        <Card to="./services?w=integration" title="Intégration" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients. " source="./code.svg" />
+        <Card to="./services/#design" title="Design" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients." source="./brush.svg" />
+        <Card to="./services/#seo" title="S.E.O" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients. " source="./SEO.svg" />
+        <Card to="./services/#integration" title="Intégration" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients. " source="./code.svg" />
 
       </div>
       <section id="projets">

@@ -5,6 +5,7 @@
     max-width: 1000px;
     margin: auto;
     position: relative;
+    scroll-behavior: smooth;
     @include desktop{
 &::after{
         content: "";
@@ -27,7 +28,7 @@
     .introduction{
         font-size: 22px;
         margin-top: -20px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     .colSelection{
         width: 100%;
@@ -54,10 +55,13 @@
             }
         }
     }
-    .colService{
+    .col-service{
         display: flex;
         flex-direction: column;
+        padding-top: 7vh;
         .title{
+        font-family: 'Playfair Display', serif;
+
                 font-size: 35px;
                 color: #3c2148;
                 font-weight: bolder;
@@ -68,19 +72,20 @@
             }
             .textContent{
                 font-size: 22px;
-                em{
-                font-family: 'Playfair Display', serif;
+               
+    }
+    em{
+        font-family: 'Playfair Display', serif;
 
-                    font-weight: bolder;
-                    font-size: 22px;
-                    letter-spacing: 1px;
-                    color: #3c2148;
-                    &:hover{
-                        color: #773396;
+            font-weight: bolder;
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: #3c2148;
+            &:hover{
+                color: #773396;
 
-                    }
-                }
             }
+        }
     }
     .navContact{
         text-decoration: unset;
@@ -106,10 +111,24 @@
         }
         @include tablet{
             width: unset;
+            width: fit-content;
             float: right;
-            margin-bottom: 80px;
+            margin-left: auto;
         }
       }
     
+    
+}
+.bandeau{
+    height: 200px;
+    width: 100%;
+    background-size: contain;
+    border-top: #3c2148 2px solid;
+    border-bottom: #3c2148 2px solid;
+    background-image: url("../public/topography.svg");
+    opacity: 0.5;
+    position: relative;
+    transform-origin: center;
+   
     
 }

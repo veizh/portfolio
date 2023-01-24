@@ -6,12 +6,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Sofia Sans', sans-serif;
+    
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 #__next{
     min-height: 100vh;
 }
 body{
     background-color: white;
+    overflow-x: hidden;
 }
 .sticky{
     position: fixed;
