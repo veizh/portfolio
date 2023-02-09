@@ -54,7 +54,7 @@ export default function Home() {
           })}
         </div>
         
-        <div className="slogan"><div className="container">Je propose mon expertise pour vous aider à ameliorer votre projet  ! Grâce à<a> de l&apos;intégration, </a> <a> du web design </a>, <a> du SEO</a> ou encore du <a>digital marketing</a>.</div><Link href="./about" className="button">En apprendre plus sur moi <img src="arrowWhite.svg"/></Link></div>
+        <div className="slogan"><div className="container">Je propose mon expertise pour vous aider à ameliorer votre projet  ! <br/>A travers<a> de l&apos;intégration, </a> <a> du web design </a>, <a> du SEO</a> ou encore du <a>digital marketing</a>.</div><Link href="./about" className="button">En apprendre plus sur moi <img src="arrowWhite.svg"/></Link></div>
         <img className="waves" src="./waves.svg"/>
         <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mp4" type="video/mp4" /></video>
 
