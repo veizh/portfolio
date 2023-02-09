@@ -5,13 +5,18 @@ import { Layout } from "../../components/Layout"
 import { NavBar } from "../../components/navBar"
 const worldcup = {
     name:"AG-consulting WorldCup",
-    src:["./projects/projet_ag.webp","./projects/projet_ag.webp","./projects/projet_ag.webp"],
-    tags:["HTML","Sass","React","mongodb"]
+    src:["./projects/projet_ag.webp","./projects/projet_ag1.webp","./projects/projet_ag2.webp"],
+    tags:["HTML","Sass","React","mongodb"],
+    cadre:"Pojet réalisé en tant que freelance pour AG-consulting. Le commanditaire voulait un site de pari pour pouvoir organiser un jeu avec ses collaborateurs.",
+    description:"L'idée etait de faire un site de pari pour la coupe du monde avec différentes fonctionnalités comme: Faire des comptes utilisateurs,  remplir ses grilles de paris et les sauvergarder, mettre en place un systeme qui permet de compter et mettre à jour les points en fonctions des résultats des matchs..."
 }
 const kasa = {
     name:"Kasa",
-    src:["./projects/projet_kasa.webp","./projects/projet_kasa.webp","./projects/projet_kasa.webp","./projects/projet_kasa.webp","./projects/projet_kasa.webp"],
-    tags:["HTML","Sass","React"]
+    src:["./projects/projet_kasa.webp","./projects/projet_kasa1.webp","./projects/projet_kasa2.webp"],
+    tags:["HTML","Sass","React"],
+    cadre:'Formation Open Classroom',
+    link:"https://project-7-opc.vercel.app/home",
+    description:"Il fallait faire l'intégration d'un site pour une plateforme d'hébergements en se basant sur une maquette figma. La technologie imposée était React et l'intérgation comprennais seulement la partie front-end du projet. "
 }
 const Projet = ()=>{
     const [param,setParam] = useState()
@@ -63,17 +68,17 @@ const Projet = ()=>{
             </div>
             <div className="colDescription">
                 <h2>Cadre:</h2>
-                <p>je suis la description ed cardre je suis la description ed cardre je suis la description ed cardre je suis la description ed cardre je suis la description ed cardre</p>
+                <p>{thisOne && thisOne.cadre}</p>
             </div>
             <div className="colDescription">
             <h2>Description:</h2>
 
-            <p>je suis la description ed cardre je suis la description ed cardre je suis la description ed cardre je suis la description ed cardre je suis la description ed cardre</p>
+            <p>{thisOne && thisOne.description}</p>
             </div>
             <div className="colDescription">
             <h2>lien:</h2>
 
-            <p>{thisOne && thisOne.link?thisOne.link:"Le lien de se site est privé."}</p>
+            <p>{thisOne && thisOne.link?<Link href={thisOne.link}>cliquez pour aller voir</Link>:"Le lien de se site est privé."}</p>
             </div>
             <div className="colDescription ">
                 <h2>images du projet:</h2>

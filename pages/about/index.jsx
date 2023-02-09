@@ -1,4 +1,5 @@
 
+import Image from "next/image"
 import Link from "next/link"
 import { Layout } from "../../components/Layout"
 import { NavBar } from "../../components/navBar"
@@ -12,7 +13,7 @@ const About =()=>{
                        <div className="top">
                             <div className="name">Maxime Durville</div>
                             <div className="containerImg">
-                                <img src="https://res.cloudinary.com/drku44nyg/image/upload/v1674149344/pp_u1xsq2.jpg" alt="photo de profil" />
+                                <img src="pp.webp" alt="photo de profil" />
                             </div>
                        </div>
                        <div className="bot">
@@ -23,10 +24,11 @@ const About =()=>{
                             </div>
                             <div className="containerContact">
                                 <Link target="_blank" href="HTTPS://www.linkedin.com/in/maxime-durville"> <img src="lkd.svg" alt="navigation au profil linkedIn" /></Link>
-                               
+
                             </div>
                        </div>
                 </div>
+                <Link className="backHome"href="/">Retournez à l&apos;acceuil <Image width='100' height="30" alt="home icon" src='./home.svg' /></Link>
             </main>
         </>
     )

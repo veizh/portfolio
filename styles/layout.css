@@ -10,7 +10,7 @@
   font-size: 59px;
   width: 100%;
 }
-.layoutContainer .backgroundSecond.services::after {
+.layoutContainer .backgroundSecond.Services::after {
   content: "Services";
 }
 .layoutContainer .backgroundSecond.projet::after {

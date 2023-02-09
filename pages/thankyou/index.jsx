@@ -8,8 +8,8 @@ import Image from 'next/image'
             <NavBar />
             <div className="layoutTy ">
                 <div className='containerTop'>
-                    <h1>Merci de votre message !</h1>
-                    <p>Je reviens vers vous le plus vite possible !</p>
+                    <h1>Merci pour votre message !</h1>
+                    <p>Je reviens vers vous dès que possible !</p>
                     <img className='waves' src='./waves.svg' />
                 </div>
                 <div className='containerBot'>

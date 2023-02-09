@@ -51,16 +51,25 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  grid-area: 20px;
 }
 .colProject .caroussel img {
   width: 95%;
   max-width: 700px;
+  aspect-ratio: 16/11;
   border: #3c2148 2px solid;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .colProject .count {
   font-size: 22px;
   text-align: center;
+}
+.colProject a {
+  color: black;
+  text-decoration: none;
+}
+.colProject a:hover {
+  color: #3c2148;
 }
 .colProject .colDescription {
   width: 100%;

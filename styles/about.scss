@@ -6,7 +6,18 @@
     margin: auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     z-index: 8;
+    a{
+        color: #3c2148;
+        text-decoration: none;
+        font-size: 27px;
+
+    }
+    .backHome{
+        margin-bottom: 50px;
+    }
     .bigCard{
         width: 90%;
         max-width: 800px;

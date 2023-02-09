@@ -7,7 +7,7 @@ export const Card = (props)=>{
             <h1 className="title"> {props.title}</h1>
             <div className="content">{props.content}</div>
             
-            <div  className="arrow" ><p>See more</p><img src="./arrow.svg"  /> </div>
+            <div  className="arrow" ><p>En savoir plus</p><img src="./arrow.svg"  /> </div>
             
         </Link>
     )

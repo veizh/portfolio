@@ -53,15 +53,16 @@ export default function Home() {
             return <p key={i} style={{animationDelay:i*0.075+"s"} }>{e}</p>
           })}
         </div>
-        <div className="slogan"><div className="container">J&apos;emploie mes compétences<a> d&apos;intégration, </a> <a> de web design</a> et de <a>digital marketing</a> pour vous aider à grandir.</div><Link href="./about" className="button">En savoir plus sur moi <img src="arrowWhite.svg"/></Link></div>
+        
+        <div className="slogan"><div className="container">Je propose mon expertise pour vous aider à ameliorer votre projet  ! Grâce à<a> de l&apos;intégration, </a> <a> du web design </a>, <a> du SEO</a> ou encore du <a>digital marketing</a>.</div><Link href="./about" className="button">En apprendre plus sur moi <img src="arrowWhite.svg"/></Link></div>
         <img className="waves" src="./waves.svg"/>
         <video muted loop autoPlay playsInline preload="auto" className={opa? "opacity":""}> <source src="./fume.mp4" type="video/mp4" /></video>
 
       </div>
       <div className="presentation">
-        <Card to="./services/#design" title="Design" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients." source="./brush.svg" />
-        <Card to="./services/#seo" title="S.E.O" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients. " source="./SEO.svg" />
-        <Card to="./services/#integration" title="Intégration" content="Nous faisons le design de votre site en s&apos;appuyant sur une UX et Ui de qualité. Afin de vous aider a convertir un maximum de clients. " source="./code.svg" />
+        <Card to="./services/#design" title="Design" content="Je m&apos;occupe de réaliser un design pour votre site internet en mettant un point d&apos;honneur sur l&apos;UX et l&apos;UI de celui-ci !" source="./brush.svg" />
+        <Card to="./services/#seo" title="S.E.O" content="Je me charge d'augmenter votre visibilité grâce au référencement naturel en utilisant toute les techniques que j&apos;ai à ma disposition. " source="./SEO.svg" />
+        <Card to="./services/#integration" title="Intégration" content="Je m&apos;applique à intégrer votre maquette afin de vous délivrer le site internet dont vous avez besoin et en le rendant utilisable sur toutes les plateformes. " source="./code.svg" />
 
       </div>
       <section id="projets">

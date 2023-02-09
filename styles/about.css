@@ -4,7 +4,17 @@
   margin: auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   z-index: 8;
+}
+.aboutCol a {
+  color: #3c2148;
+  text-decoration: none;
+  font-size: 27px;
+}
+.aboutCol .backHome {
+  margin-bottom: 50px;
 }
 .aboutCol .bigCard {
   width: 90%;
