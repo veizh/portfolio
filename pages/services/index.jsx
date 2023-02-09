@@ -13,8 +13,8 @@ const Marketing =()=>{
             la <em>mise en avant </em>de votre produit sur les plateformes de recherches, <em>le marketing d&apos;influence </em>ou encore <em>le SEO.</em><br/><br/> 
             Il implique aussi la gestion votre image en ligne, plus vous êtes présent et formez une <em>communauté autour de votre 
             marque </em> plus la confiance et la fidélité de vos clients augmenteront. <br/><br/> 
-            Etant trés familier des outils utilisés pour<em> développer cette image de marque </em> en ligne ou encore pour mettre en avant vos produits 
-            je propose de gerer cette partie de votre buisness pour vous. 
+            Etant trés familier des outils utilisés pour<em> développer cette image de marque </em> ou encore pour mettre en avant vos produits 
+            je propose de gérer cette partie de votre buisness pour vous. 
 
             </div>
             <button className="navContact" ><Link href="./#contact">Ca m&apos;intéresse</Link> </button>
