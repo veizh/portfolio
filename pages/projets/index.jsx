@@ -37,7 +37,7 @@ const Projet = ()=>{
             setThisOnes(worldcup)
             console.log(thisOne);
         }
-    },[!param])
+    },[])
 
     function changeImage(i){
 

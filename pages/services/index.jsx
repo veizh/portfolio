@@ -30,7 +30,7 @@ const Inte =()=>{
             <div className="textContent">
             Vous n&apos;avez pas encore de site internet ?<br/><br/> L&apos;intégration représente toute la création de la <em>partie fonctionelle </em>d&apos;un site.
             Aussi bien la partie visible <em>(Front-End)</em> que la partie des données <em>(Back-End).</em><br/><br/>
-            Aprés l'intégration votre site sera <em>accessible en ligne</em> et utilisable par les différents utilisateurs.<br/><br/>
+            Aprés l&apos;intégration votre site sera <em>accessible en ligne</em> et utilisable par les différents utilisateurs.<br/><br/>
             Je mets en place votre site<em> de A à Z</em>, en utilisant différents process pour arriver à obtenir un site à la navigation <em>fluide et agréable</em> comportant toutes les fonctionalitées dont vous avez besoins au sein votre projet. <br/><br/>
             
 
@@ -48,7 +48,7 @@ const Seo =()=>{
             Le SEO littéralement <em>Search Engine Optimisation,</em> représente le référencement naturel sur les moteurs de recherches. C&apos;est à dire votre place dans la liste de site google sur une recherche particulière. <br/><br/>
             Lorque google analyse votre site, il lui attribue <em>une note de confiance.</em>Tout le travail concernant le SEO à pour objectif de faire augmenter cette note de confiance. <br/><br/> 
             Différents techniques sont utilisées: <em>Les backlinks</em> ,<em>Une sémantique propre et claire</em>, des articles pertinents avec un <em>taux de rétention et de clics élevé</em> sur votre site.<br/><br/>
-            Une fois mis en place, il offre de la visibilité naturelle et vous permet d'attirer donc des clients <em>sans débourser un centime. </em><br/><br/>
+            Une fois mis en place, il offre de la visibilité naturelle et vous permet d&apos;attirer donc des clients <em>sans débourser un centime. </em><br/><br/>
             Je propose d&apos;optimiser votre SEO avec toutes <em>les techniques à ma disposition.</em>
             
 
@@ -84,7 +84,7 @@ const Ecom =()=>{
                 Le <em>commerce en ligne </em>est devenu si important qu&apos;on ne peut plus le négliger peu importe le produit que vous proposez.<br/> <br/> 
                 L&apos;idée est simple, c&apos;est d&apos;avoir une boutique en ligne qui vous permet de faire des ventes de manières <em>presques automatiques</em> sans avoir 
                 de maintenance particulière à faire une fois que le site est en place.<br/> <br/> 
-                Mais malgrè ça, le site a besoin d&apos;<em>inspirer confiance </em>afin d'aider le client <em>à valider son panier ou à souscrire a votre service. </em><br/><br/>
+                Mais malgrè ça, le site a besoin d&apos;<em>inspirer confiance </em>afin d&apos;aider le client <em>à valider son panier ou à souscrire a votre service. </em><br/><br/>
                 De simple techniques de design ou d&apos;agencement qui aide a obtenir <em>des taux de conversion plus important</em> existent et je peux vous aider a les mettre en place.<br/><br/>
                 J&apos;utilise le <em>CMS Shopify,</em> qui me permet d&apos;assurer des performances optimals pour votre boutique à moindre coût mais reste ouvert à d&apos;<em>autres technologies.</em>
             </div>
@@ -107,7 +107,7 @@ const Ecom =()=>{
             <Layout name="Services" > </Layout>
             <div className="containerServices" id="ser">
                 <div className="introduction">
-                    Le web est tout aussi incroyable qu'il est complexe. <br/>Passer par une personne qualifiée qui fait parti de ce domaine est donc indispensable pour réaliser vos projets et pour obtenir de bons résultats.
+                    Le web est tout aussi incroyable qu&apos;il est complexe. <br/>Passer par une personne qualifiée qui fait parti de ce domaine est donc indispensable pour réaliser vos projets et pour obtenir de bons résultats.
                 </div>
                 <InView as="div" onChange={(inView, entry) => {
                     console.log('Inview:', inView)
