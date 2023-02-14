@@ -19,23 +19,21 @@ const kasa = {
     description:"Il fallait faire l'intégration d'un site pour une plateforme d'hébergements en se basant sur une maquette figma. La technologie imposée était React et l'intérgation comprennais seulement la partie front-end du projet. "
 }
 const Projet = ()=>{
-    const [param,setParam] = useState()
+    const [params,setParam] = useState()
     const [ImageIndex,setImageIndex] = useState(0)
     const [thisOne,setThisOnes] = useState()
     useEffect(()=>{
 
-        const params =  new URLSearchParams(window.location.search)
-        setParam(params.get("name"))
-        console.log(param);
-        if(param==='Kasa'){
-            console.log("Kasa");
+        const param =  new URLSearchParams(window.location.search)
+       
+        console.log(param.get("name"));
+        if(param.get("name")==='Kasa'){
+            console.log("kasa");
             setThisOnes(kasa)
-            console.log(thisOne);
         }
-        if(param==='Ag-WorldCup'){
+        if(param.get("name")==='Ag-WorldCup'){
             console.log("ag");
             setThisOnes(worldcup)
-            console.log(thisOne);
         }
     },[])
 

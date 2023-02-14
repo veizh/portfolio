@@ -91,7 +91,7 @@ export default function Home() {
           </div>
           
           <div className="containerInput lastName">
-            <label htmlFor="lastName">Prenom*</label>
+            <label htmlFor="lastName">Prénom*</label>
             <input type="text" name="lastName" required/>
           </div>
 
@@ -101,7 +101,7 @@ export default function Home() {
           </div>
 
           <div className="containerInput message">
-            <label  htmlFor="message">Vote Message*</label>
+            <label  htmlFor="message">Votre Message*</label>
             <textarea type="text" name="message" required/>
           </div>
           <button type="submit">Envoyer</button>
